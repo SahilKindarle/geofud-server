@@ -1,0 +1,28 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  form(action="/item/new" method="POST" enctype="application/x-www-form-urlencoded")
+    label(for="name") Name
+    input#name(name="name" type="text")
+
+    label(for="protein") protein
+    input#protein(name="protein" type="number")
+
+    label(for="carbohydrate") carbohydrate
+    input#carbohydrate(name="carbohydrate" type="number")
+
+    label(for="calcium") calcium
+    input#calcium(name="calcium" type="number")
+
+    label(for="iron") iron
+    input#iron(name="iron" type="number")
+
+    label(for="fat") fat
+    input#fat(name="fat" type="number")
+
+    input(type="submit" value="Submit")
+
+
+
